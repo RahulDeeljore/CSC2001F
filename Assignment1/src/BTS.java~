@@ -1,0 +1,12 @@
+public class BTS
+{
+public static void main(String[] args)
+{
+BinarySearchTree<Dam> Bt = new BinarySearchTree<Dam>();
+Dam[] d = new read().makearray();
+for ( Dam i: d)
+{
+Bt.insert(d);
+}
+}
+}
