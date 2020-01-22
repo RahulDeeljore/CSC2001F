@@ -1,0 +1,55 @@
+CSC2001F 2018 Assignment 3
+Instructions
+The goal of this assignment is to demonstrate an application that uses hash tables for repeated fast lookups within a fixed set of data elements.
+
+You are required to develop a Java application that can be used to verify voter registration at a polling station using a low-powered mobile device (but with a decent amount of memory).  The application should have a user interface (text or GUI) where ID numbers are entered continuously and each number is checked against a listing of valid voters.  If there is a match, the person's name must be displayed so this can be further verified by the voting station agent.   
+
+Dataset
+Create your own dataset (of at least 50 entries, but preferably more) for this assignment.
+
+You need a list of 13-numeral ID numbers and associated names.  Do not assume 2 names per person - all we know about names is that any person has at least one name.
+
+For example, the first few lines could look like:
+
+9201211234567 Black Panther
+7111270987654 Wonder Woman
+6212081234567 Spiderman
+
+Store your dataset in a file.
+
+Application
+Your application must have a user interface in either text or graphical form.  The user interface must allow efficient and continuous entry of IDs so that people arriving at the voting station can be checked as quickly as possible.
+
+Your application must use a hash table.  Given that the voting station may not have Internet access, your application is running offline.  In order to maximise speed of lookups, a hash table is to be used, with all data stored in memory.  This means that the application will load the data into memory once and do repeated fast lookups within a data structure, which is an ideal application of a hash table.
+
+You need to decide on the design of the hash table:
+
+the hash function to be used
+the size of the hash table array
+the collision resolution mechanism
+You must implement the hash table from scratch. You may not reuse code from anywhere, except for the implementation of linked lists or BSTs if you opt to use those:
+
+Report
+Your report must explain the following:
+
+The design of your application, data structure and OOP
+The interface of your application
+Results and discussion of tests that you conducted to determine the speed of your application
+What aspect of your submission constitutes creativity
+Dev requirements
+As a software developer, you are required to make appropriate use of the following tools:
+
+git, for source code management (but not required to submit a log)
+javadoc, for documentation generation
+make, for automation of compilation and documentation generation
+Submission requirements
+Submit a .tar.gz compressed archive containing:
+
+Makefile
+src/
+all source code
+bin/
+all class files
+doc/
+javadoc output
+report.pdf
