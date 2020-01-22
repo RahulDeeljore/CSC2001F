@@ -1,5 +1,5 @@
 # CSC2001F
-Second year assignments
+Second year assignments first semester
 
 
 
